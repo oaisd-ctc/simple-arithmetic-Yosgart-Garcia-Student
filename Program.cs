@@ -2,7 +2,18 @@
 
 public class Program
 {
+    static float subX;
     public static void Main(string[] args)
+    {
+        Addition();
+        Subtraction();
+        Multiplication();
+        IntegerDivision();
+        DecimalDivision();
+        Modulus();
+    } 
+
+    public static void Addition()
     {
         Console.WriteLine(":) | Let's do a some adding. Type in any number, go ahead.");
         float addX = float.Parse(Console.ReadLine());
@@ -12,20 +23,22 @@ public class Program
 
         float addition = addX + addY;
         Console.WriteLine(">:D | " + addition + "! " + addX + " + " + addY + " is " + addition + "! How easy, you should've given me some harder numbers...");
+    }
 
-        //----------------------------------------------------------------------------------------------------------------------------
-
+    public static void Subtraction()
+    {
         Console.WriteLine("S:) | Now, provide a completely different number to use in the subtraction process.");
-        float subX = float.Parse(Console.ReadLine());
+        subX = float.Parse(Console.ReadLine());
 
         Console.WriteLine(">:O | " + subX + ", really??? That number sucks... Moving on, what's the next number?");
         float subY = float.Parse(Console.ReadLine());
 
         float subtraction = subX - subY;
         Console.WriteLine(":S | The result is " + subtraction + "...");
+    }
 
-        //----------------------------------------------------------------------------------------------------------------------------
-
+    public static void Multiplication()
+    {
         Console.WriteLine(":| | Enter a number for multiplication, if you please.");
         float mulX = float.Parse(Console.ReadLine());
 
@@ -34,9 +47,10 @@ public class Program
 
         float multiplication = mulX * mulY;
         Console.WriteLine(":D | " + multiplication + ". Oh that number is quite pretty, I'll forgive you for typing in " + subX + "!");
+    }
 
-        //----------------------------------------------------------------------------------------------------------------------------
-
+    public static void IntegerDivision()
+    {
         Console.WriteLine(">:D | Prepare thyself for integer division. (By preferrably typing a large integer below)");
         int divX = int.Parse(Console.ReadLine());
 
@@ -45,9 +59,10 @@ public class Program
 
         int intDivision = divX / divY;
         Console.WriteLine(":| | " + intDivision + ". That's right, I just dropped the decimal.");
+    }
 
-        //----------------------------------------------------------------------------------------------------------------------------
-
+    public static void DecimalDivision()
+    {
         Console.WriteLine("S:^ | Maybe you'll be more impressed with this decimal division!");
         float decimalDivX = float.Parse(Console.ReadLine());
 
@@ -56,9 +71,10 @@ public class Program
 
         float decimalDivision = decimalDivX / decimalDivY;
         Console.WriteLine(":)" + decimalDivX + " divided by " + decimalDivY + " is " + decimalDivision + "! Impressed? You surely will be with this next one...");
+    }
 
-        //----------------------------------------------------------------------------------------------------------------------------
-
+    public static void Modulus()
+    {
         Console.WriteLine(":} | I present to you: modulus. Enter your least favorite number.");
         float modX = float.Parse(Console.ReadLine());
 
@@ -68,5 +84,5 @@ public class Program
         float modulus = modX % modY;
         Console.WriteLine(":> | " + modX + " modulus-ed by " + modY + " is " + modulus + "!");
         Console.WriteLine("u~u | *Yawn* all this easy math is making me sleepy... That's enough for today. Go away now.");
-    } 
+    }
 }
