@@ -33,11 +33,11 @@ public class Program
         float mulY = float.Parse(Console.ReadLine());
 
         float multiplication = mulX * mulY;
-        Console.WriteLine(":D | " + multiplication + ". Oh that number is quite pretty, I'll forgive you for " + subX + "!");
+        Console.WriteLine(":D | " + multiplication + ". Oh that number is quite pretty, I'll forgive you for typing in " + subX + "!");
 
         //----------------------------------------------------------------------------------------------------------------------------
 
-        Console.WriteLine(">:D | Prepare thyself for integer division. (By typing a preferrably large integer below)");
+        Console.WriteLine(">:D | Prepare thyself for integer division. (By preferrably typing a large integer below)");
         int divX = int.Parse(Console.ReadLine());
 
         Console.WriteLine(":O | Wow that is a big number... Now enter an integer that doesn't go into " + divX + " very nicely.");
